@@ -1,4 +1,4 @@
-### Hi there 👋
+### おすすめのクルマ・・・を探します 👋
 
 <!--
 **Minoru-KJ/Minoru-KJ** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,4 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
- ddd
+＜説明＞
+　クルマ選びに困ったら、何を選んだら分からないズボラなあなたにお勧め！
+ ①クルマ購入に当てる予算　②クルマの乗員数（2シーター珍しくない？ほぼ4人から5人）
+ ③クルマ形状のタイプ　（最近SUV多すぎない！？）④こだわりポイントを選んでください。
+ きっと、良いモノをご紹介できるはずです。
