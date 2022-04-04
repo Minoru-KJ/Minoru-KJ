@@ -1,0 +1,24 @@
+
+.container {
+    background-color: #0db;
+    margin: 30px;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+    color: #fff;
+    font-size: large;
+   
+}
+.item {
+    background-color: #0bd;
+    gap: 5px;
+    margin: 10x;
+    display:flex;
+   flex-direction: column;
+
+}
+
+.itemrradadio{
+    flex-direction: column;
+    background-color: #0bd;
+}
