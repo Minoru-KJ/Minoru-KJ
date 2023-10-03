@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>動的な表</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>動的な表</h1>
+    <div id="tableContainer"></div>
+
+    <script>
+        // 表示するデータの定義
+        var data = [
+            { Jコード: 123456, Grade: 1, Class: "A" ,DIV:"学園"},
+            { Jコード: 123456, Grade: 1, Class: "A" ,DIV:"学園"},
+            { Jコード: 123456, Grade: 1, Class: "A" ,DIV:"学園"},
+            { Jコード: 123456, Grade: 1, Class: "A" ,DIV:"学園"},
+        ];
+
+        // 表を作成する関数
+        function createTable(data) {
+            // table要素を作成
+            var table = document.createElement("table");
+
+            // 表のヘッダーを作成
+            var thead = document.createElement("thead");
+            var headerRow = document.createElement("tr");
+            var headers = Object.keys(data[0]);
+            headers.forEach(function (header) {
+                var th = document.createElement("th");
+                th.textContent = header;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // 表のボディを作成
+            var tbody = document.createElement("tbody");
+            data.forEach(function (item) {
+                var row = document.createElement("tr");
+                headers.forEach(function (header) {
+                    var td = document.createElement("td");
+                    td.textContent = item[header];
+                    row.appendChild(td);
+                });
+                tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
+
+            // 表をHTML上に表示
+            var tableContainer = document.getElementById("tableContainer");
+            tableContainer.appendChild(table);
+        }
+
+        // 表を作成
+        createTable(data);
+    </script>
+</body>
+</html>
